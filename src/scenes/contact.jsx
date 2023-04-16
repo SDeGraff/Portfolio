@@ -2,6 +2,7 @@ import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 
+//Hook returns an object with properties, register,trigger,formState.
 const Contact = () => {
   const {
     register,
@@ -9,6 +10,7 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
+  //onSubmit function that triggers the validation and if it is valid, it will submit the form.
   const onSubmit = async (e) => {
     console.log("~ e", e);
     const isValid = await trigger();
@@ -17,9 +19,10 @@ const Contact = () => {
     }
   };
 
+  //uses framer library to animate the contact section
   return (
     <section id="contact" className="contact py-48">
-      {/* HEADINGS */}
+     
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -41,7 +44,7 @@ const Contact = () => {
         </div>
       </motion.div>
 
-      {/* FORM & IMAGE */}
+    
       <div className="md:flex md:justify-between gap-16 mt-5">
         <motion.div
           initial="hidden"

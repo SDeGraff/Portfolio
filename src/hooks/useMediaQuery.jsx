@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+//used for responsive reactivity. resizes if the screen size changes
 const useMediaQuery = (query) => {
   const [matches, setMatches] = useState(false);
 
