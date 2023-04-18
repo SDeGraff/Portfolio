@@ -17,6 +17,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   );
 };
 
+// navbar that is used to navigate the page
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");

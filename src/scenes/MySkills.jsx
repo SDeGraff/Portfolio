@@ -6,7 +6,7 @@ const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section id="skills" className="pt-10 pb-24">
-      {/* HEADER AND IMAGE SECTION */}
+      {/* SKILLS HEADER */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
           className="md:w-1/3"
@@ -77,7 +77,7 @@ const MySkills = () => {
           </p>
         </motion.div>
 
-        {/* INNOVATIVE */}
+       
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -105,7 +105,7 @@ const MySkills = () => {
             faucibus a
           </p>
         </motion.div>
-        {/* IMAGINATIVE */}
+    
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"

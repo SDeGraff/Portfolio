@@ -10,7 +10,7 @@ const Landing = ({ setSelectedPage }) => {
       id="home"
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
     >
-      {/* IMAGE SECTION */}
+      {/*Only show on desktop devices (above 1060px)*/}
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
@@ -32,9 +32,9 @@ const Landing = ({ setSelectedPage }) => {
         )}
       </div>
 
-      {/* MAIN TEXT */}
+      {/* MOBILE BACKGROUND */}
       <div className="z-30 basis-2/5 mt-12 md:mt-32">
-        {/* HEADINGS */}
+      
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -60,7 +60,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
         </motion.div>
 
-        {/* CALL TO ACTIONS */}
+        {/* Only show on mobile devices (below 1060px)*/}
         <motion.div
           className="flex mt-5 justify-center md:justify-start"
           initial="hidden"

@@ -1,9 +1,11 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
+// page dots that are used to navigate the page
 const DotGroup = ({ selectedPage, setSelectedPage }) => {
   const selectedStyles = `relative bg-yellow before:absolute before:w-6 before:h-6 before:rounded-full
     before:border-2 before:border-yellow before:left-[-50%] before:top-[-50%]`;
 
+    // the dots are links that are used to navigate the page
   return (
     <div className="flex flex-col gap-6 fixed top-[60%] right-7">
       <AnchorLink

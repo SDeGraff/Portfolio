@@ -34,6 +34,7 @@ const Project = ({ title }) => {
   );
 };
 
+//uses framer library to animate the projects section
 const Projects = () => {
   return (
     <section id="projects" className="pt-48 pb-48">
